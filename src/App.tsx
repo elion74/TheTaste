@@ -19,7 +19,13 @@ function App() {
     <SearchBar />
     </header>
 
-    <section>
+    <section className="filter">
+      <Filter />
+      <Filter />
+      <Filter />
+      <Filter />
+      <Filter />
+      <Filter />
       <Filter />
     </section>
 

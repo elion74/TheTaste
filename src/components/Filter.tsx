@@ -1,8 +1,13 @@
 import React from 'react'
+import "./Filter.css"
+
 
 function Filter() {
   return (
-    <div></div>
+    <div className='filter-box'>
+      <label>animal</label>
+      <input type= "checkbox"/>
+    </div>
   )
 }
 
