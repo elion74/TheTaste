@@ -16,10 +16,7 @@ function App() {
     <div>
 
     <header>
-
     <SearchBar />
-
-
     </header>
 
     <section>
