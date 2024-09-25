@@ -1,8 +1,15 @@
-import React from 'react'
+
+import "./Card.css"
+
 
 function Card() {
   return (
-    <div></div>
+    <div className="card">
+
+      <h1 className="heading">Food</h1>
+      <p className="text">description </p>
+
+    </div>
   )
 }
 

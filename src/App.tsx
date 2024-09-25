@@ -29,8 +29,13 @@ function App() {
       <Filter />
     </section>
 
-    <section>
+    <section className='cards'>
 
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
     <Card/>
 
     </section>
