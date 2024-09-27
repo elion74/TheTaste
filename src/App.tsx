@@ -16,6 +16,7 @@ function App() {
 
   const [meals, setMeals] = useState([]);
   const [data, setData] = useState<string>("");
+  const [searchResult, setSearchResults] = useState<Meal>([]);
   
 
   useEffect(() =>{
@@ -45,6 +46,20 @@ function App() {
     setData(newData); // Update the filter value
   };
 
+
+  const search = async (newname: string) => {
+    try {
+      const response = await fetch(
+        `https://www.themealdb.com/api/json/v1/1/search.php?s=${newname}`
+      );
+      const result = await response.json();
+      setSearchResults(result.meals || []); // Set search results or empty array if none
+
+      console.log(result)
+    } catch (error) {
+      console.error('Error fetching search results:', error);
+    }
+  };
  
   return (
     <>
@@ -54,7 +69,7 @@ function App() {
     <div>
 
     <header>
-    <SearchBar />
+        <SearchBar callback = {search} />
     </header>
 
     <section className="filter">
@@ -63,15 +78,18 @@ function App() {
     </section>
 
     <section className='cards'>
-
-    {meals.length > 0 ? (
+ {/* Display search results if there are any, otherwise show filtered meals */}
+ {searchResult.length > 0 ? (
+            searchResult.map((meal: Meal) => (
+              <Card key={meal.strMeal} name={meal.strMeal} img={meal.strMealThumb} />
+            ))
+          ) : meals.length > 0 ? (
             meals.map((meal: Meal) => (
               <Card key={meal.strMeal} name={meal.strMeal} img={meal.strMealThumb} />
             ))
           ) : (
-            <p>No meals found. Try another filter.</p>
+            <p>No meals found. Try another filter or search term.</p>
           )}
-      
     
     </section>
       
