@@ -1,0 +1,41 @@
+[33mcommit 643939a9c8262a5f19d467a3feaba6f1e8961a85[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Elion Shahini <elion.shahini74@gmail.com>
+Date:   Fri Sep 27 13:55:07 2024 +0200
+
+    make api call and render Cards with data
+
+[33mcommit 6bd5cdbf503dfaeb5ea2eb8cc571961ea7167889[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Elion Shahini <elion.shahini74@gmail.com>
+Date:   Wed Sep 25 23:41:01 2024 +0200
+
+    card component done and added
+
+[33mcommit 44ecdb8b1b4732517e0fd8bbd04c83e66efc0e2c[m
+Author: Elion Shahini <elion.shahini74@gmail.com>
+Date:   Wed Sep 25 23:30:29 2024 +0200
+
+    filter as checkboxes
+
+[33mcommit 49897f41faed71a704c9701b150f864305e0857d[m
+Author: Elion Shahini <elion.shahini74@gmail.com>
+Date:   Wed Sep 25 23:08:28 2024 +0200
+
+    searchbar mobile added
+
+[33mcommit ede17ec90841700751cd2dbd165293d1b63be30f[m
+Author: Elion Shahini <elion.shahini74@gmail.com>
+Date:   Wed Sep 25 15:42:52 2024 +0200
+
+    Sidebar mobile first and Logo added
+
+[33mcommit c28fb9c6be0664748730870a0eb47948b72c68ee[m
+Author: Elion Shahini <elion.shahini74@gmail.com>
+Date:   Wed Sep 25 14:54:54 2024 +0200
+
+    Structure added
+
+[33mcommit eb840583410fea90a70e00e4566ac2480bfb9883[m
+Author: Elion Shahini <elion.shahini74@gmail.com>
+Date:   Wed Sep 25 14:36:28 2024 +0200
+
+    inital commit
