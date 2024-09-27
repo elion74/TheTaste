@@ -7,15 +7,21 @@
     border-radius: 20px;
     box-shadow:  3px 5px rgb(163, 163, 163);
 
-    padding-top :25px;
-    margin-top:30px;
-
-    text-align: center;
+    margin-top: 100px;;
 
 }
 
-.text{
 
-    margin-top:50px;
 
+.heading{
+    margin-top: 10px;
+
+    text-align: center;
+}
+
+.image{
+    max-width: 100px;
+    margin-left: 12.5px;
+    margin-top: 30x;
+    object-fit: cover;
 }

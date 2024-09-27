@@ -2,12 +2,22 @@
 import "./Card.css"
 
 
-function Card() {
+type Props = {
+
+  name:string, 
+  img:string
+
+}
+
+function Card(props:Props) {
   return (
     <div className="card">
 
-      <h1 className="heading">Food</h1>
-      <p className="text">description </p>
+
+      <h1 className="heading">{props.name}</h1>
+
+      <img className= "image" src = {props.img} />
+      
 
     </div>
   )
